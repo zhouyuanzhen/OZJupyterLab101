@@ -2,6 +2,8 @@
 
 Jupyter Lab 101 Quick Start Environment
 
+![Screen Shot](res/screenshot.png)
+
 ## Quick Start
 
 ```shell
@@ -17,11 +19,14 @@ python3 -m venv .venv
 .venv/bin/pip install -i https://mirrors.aliyun.com/pypi/simple jupyter
 ```
 
-### Start the Jupyter Lab
+### Start the Jupyter Lab/Notebook
 
 ```shell
 # [ Start the jupyter lab ]
 .venv/bin/jupyter lab
+
+# [ Start the jupyter notebook on port 1234 and open demo.ipynb ]
+.venv/bin/jupyter notebook --ServerApp.port=1234 --ServerApp.file_to_run=demo.ipynb
 ```
 
 ***or***
